@@ -1,6 +1,3 @@
-networks:
-  dev:
-
 services:
   nginx:
     image: nginx:stable-alpine
@@ -20,3 +17,7 @@ services:
       context: ./frontend
     networks:
       - dev
+
+networks:
+  dev:
+    driver: bridge
