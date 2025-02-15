@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "types": ["node", "express"]
+  },
+  "include": ["src/**/*.ts"],
+  "ts-node": {
+    "ignoreDiagnostics": [
+      2322, 2304, 2551, 2339, 2345, 2348, 2353, 2769, 7006, 18047
+    ]
+  }
+}
